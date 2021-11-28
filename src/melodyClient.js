@@ -62,19 +62,7 @@ class Melody extends Client {
           host: this.config.Lavalink[0].host,
           port: this.config.Lavalink[0].port,
           password: this.config.Lavalink[0].pass,
-        },
-        {
-          id: this.config.Lavalink[1].id,
-          host: this.config.Lavalink[1].host,
-          port: this.config.Lavalink[1].port,
-          password: this.config.Lavalink[1].pass,
-        },
-        {
-          id: this.config.Lavalink[2].id,
-          host: this.config.Lavalink[2].host,
-          port: this.config.Lavalink[2].port,
-          password: this.config.Lavalink[2].pass,
-        },
+        }
       ]
     );
     const healthchecks = setInterval(() => {
@@ -94,19 +82,7 @@ class Melody extends Client {
           host: this.config.Lavalink[0].host,
           port: this.config.Lavalink[0].port,
           password: this.config.Lavalink[0].pass,
-        },
-        {
-          identifier: this.config.Lavalink[1].id,
-          host: this.config.Lavalink[1].host,
-          port: this.config.Lavalink[1].port,
-          password: this.config.Lavalink[1].pass,
-        },
-        {
-          identifier: this.config.Lavalink[2].id,
-          host: this.config.Lavalink[2].host,
-          port: this.config.Lavalink[2].port,
-          password: this.config.Lavalink[2].pass,
-        },
+        }
       ],
       send(id, payload) {
         const guild = client.guilds.cache.get(id);
